@@ -1,6 +1,6 @@
 import "./App.css";
 import { Fragment, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";
@@ -34,7 +34,9 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+
+
         <Fragment>
           <Navbar />
 
@@ -75,7 +77,7 @@ const App = () => {
             </Switch>
           </section>
         </Fragment>
-      </Router>
+      </BrowserRouter>
     </Provider>
   );
 };
