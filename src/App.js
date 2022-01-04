@@ -1,6 +1,7 @@
 import "./App.css";
 import { Fragment, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";
@@ -34,7 +35,7 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter history={window.history}>
 
 
         <Fragment>
@@ -78,7 +79,7 @@ const App = () => {
           </section>
         </Fragment>
       </BrowserRouter>
-    </Provider>
+    </Provider >
   );
 };
 
