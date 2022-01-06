@@ -45,6 +45,9 @@ const ProfileTop = ({
         <p className="fs-1 fw-bolder" style={{ color: "#0453c7 !important" }}>
           {name}
         </p>
+
+
+
         <p className="lead">
           {status} {company && <span> at {company}</span>}
         </p>
