@@ -97,7 +97,7 @@ const Navbar = ({ auth: { user, isAuthenticated, loading }, logout }) => {
             fontSize: "28px"
           }}>
             <i className="fas fa-code"></i>{" "}
-            <Link to="/posts" className="hide-sm">DevConnector</Link>
+            <Link to="/posts" className="hide-sm highlight">DevConnector</Link>
 
           </div>
 

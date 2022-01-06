@@ -34,14 +34,16 @@ const Profiles = ({
                   Developers
                 </p>
                 <div>
-                  <p className="fs-4 text-muted">
-                    <i className="fab fa-connectdevelop" /> Browse and connect
-                    with developers
+                  <p className="fs-5 text-muted">
+                    <i className="fab fa-connectdevelop" /> Browse and connect with developers
                   </p>
                 </div>
               </div>
             </div>
-            <div className="row gx-5">
+            <div className="row gx-2 gy-3" style={{
+
+              padding: "2px"
+            }}>
               {profiles.length > 1 ? (
                 profiles.map(
                   (profile) =>

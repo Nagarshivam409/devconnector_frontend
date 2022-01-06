@@ -573,11 +573,13 @@ a:hover {
 }
 
 .skills {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 2px;
 }
 
 /* .profile-about .skill {
@@ -783,9 +785,12 @@ a:hover {
   }
 
   .skills {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     border: none;
+    gap: 5px;
+
   }
 
   .dash-buttons a {
